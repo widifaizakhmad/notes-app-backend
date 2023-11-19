@@ -12,6 +12,5 @@ steps:
       - '--platform=managed'
       - '--region=asia-southeast2'  # Replace with your desired region
       - '--allow-unauthenticated' # Remove or adjust this flag based on your authentication needs
-      - '--replace' # This flag updates the existing service instead of creating a new one
 options:
   logging: CLOUD_LOGGING_ONLY
