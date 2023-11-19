@@ -8,7 +8,7 @@ steps:
       - 'run'
       - 'deploy'
       - 'notes-app-backend'  # Replace with your service name
-      - '--image=asia-southeast2-docker.pkg.dev/cloud-run-test-405515/cloud-run-source-deploy/notes-app-backend@sha256:8948156dccbff500b19f35d9c9325d41ec6c7163b0e240391412e32826ed82b0'  # Replace 'your-project-id' with your GCP project ID
+      - '--image=asia-southeast2-docker.pkg.dev/cloud-run-test-405515/cloud-run-source-deploy/notes-app-backend:latest'  # Replace 'your-project-id' with your GCP project ID
       - '--platform=managed'
       - '--region=asia-southeast2'  # Replace with your desired region
       - '--allow-unauthenticated' # Remove or adjust this flag based on your authentication needs
