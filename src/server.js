@@ -8,7 +8,7 @@
 const Hapi = require('@hapi/hapi');
 const routes = require('./routes');
 
-console.log('Hallo kita akan membuat RESTful API');
+console.log('Hallo kita akan membuat RESTful API, ini adalah tanda perubahan diterima');
 
 const init = async () => {
   const server = Hapi.server({
