@@ -4,6 +4,9 @@ steps:
       - 'run'
       - 'deploy'
       - 'notes-app-backend'  
-      - '--image=asia-southeast2-docker.pkg.dev/cloud-run-test-405515/cloud-run-source-deploy/notes-app-backend:latest'  
+      - '--image=asia-southeast2-docker.pkg.dev/cloud-run-test-405515/cloud-run-source-deploy/notes-app-backend:latest'
+      - '--platform=managed'
+      - '--region=asia-southeast2' 
+      - '--allow-unauthenticated
 options:
   logging: CLOUD_LOGGING_ONLY
