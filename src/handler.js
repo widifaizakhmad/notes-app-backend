@@ -69,7 +69,7 @@ const getNoteByIdHandler = (request, h) => {
       }
       const response = h.response({
         status: 'fail',
-        message: 'Catatan tidak ditemukan',
+        message: 'Catatan tidak ditemukan, , ini adalah tes jika CI/CD berhasil dilakukan',
     });
 
     response.code(404);
