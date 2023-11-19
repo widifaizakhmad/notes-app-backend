@@ -1,2 +1,4 @@
+steps:
+  - name: gcr.io/cloud-run-test-405515/github.com/widifaizakhmad/notes-app-backend:$COMMIT_SHA
 options:
   logging: CLOUD_LOGGING_ONLY
