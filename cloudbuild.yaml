@@ -1,15 +1,14 @@
 steps:
   - name: 'gcr.io/cloud-builders/npm'
-    args: ['install'] # Example npm install step if you have Node.js dependencies
-  # Deploy to Cloud Run
+    args: ['install'] 
   - name: 'gcr.io/cloud-builders/gcloud'
     args:
       - 'run'
       - 'deploy'
       - 'notes-app-backend'  
-      - '--image=asia-southeast2-docker.pkg.dev/cloud-run-test-405515/cloud-run-source-deploy/notes-app-backend:latest'  # Replace 'your-project-id' with your GCP project ID
+      - '--image=asia-southeast2-docker.pkg.dev/cloud-run-test-405515/cloud-run-source-deploy/notes-app-backend:latest'  
       - '--platform=managed'
-      - '--region=asia-southeast2'  # Replace with your desired region
-      - '--allow-unauthenticated' # Remove or adjust this flag based on your authentication needs
+      - '--region=asia-southeast2'  
+      - '--allow-unauthenticated' 
 options:
   logging: CLOUD_LOGGING_ONLY
